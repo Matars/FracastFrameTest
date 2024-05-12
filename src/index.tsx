@@ -5,13 +5,10 @@ import { Box, Column, Heading, Text, VStack, vars } from './ui.js'
 import { devtools } from 'frog/dev'
 // import { neynar } from 'frog/hubs'
 
+
 export const app = new Frog({
-    // Supply a Hub to enable frame verification.
-    // hub: neynar({ apiKey: 'NEYNAR_FROG_FM' })
+    basePath: '/api',
 })
-
-app.use('/', serveStatic({ root: './public' }))
-
 
 let count = 0;
 
