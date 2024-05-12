@@ -11,6 +11,7 @@
     "hono": "^4"
   },
   "devDependencies": {
-    "typescript": "latest"
+    "typescript": "latest",
+    "vercel": "^34.1.11"
   }
 }

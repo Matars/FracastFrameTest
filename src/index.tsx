@@ -1,5 +1,6 @@
 import { serveStatic } from '@hono/node-server/serve-static'
 import { Button, Frog, TextInput } from 'frog'
+import { handle } from 'frog/vercel'
 import { Box, Column, Heading, Text, VStack, vars } from './ui.js'
 import { devtools } from 'frog/dev'
 // import { neynar } from 'frog/hubs'
@@ -81,3 +82,6 @@ app.frame('/Results', (c) => {
 
 
 devtools(app, { serveStatic })
+
+export const GET = handle(app)
+export const POST = handle(app)
